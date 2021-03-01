@@ -1,0 +1,34 @@
+{
+    "name":"PianoMan",
+    "health":500,
+    "phases":[
+        {
+            "damage":[0,1],
+            "attackSpeed":6400,
+            "movement":[
+                ["left","right","middle","summon","right","summon","left"],
+                ["middle","right","left","summon","summon"]
+            ]
+        },
+        {
+            "damage":[1,2,3],
+            "attackSpeed":4000,
+            "movement":[
+                ["middle","outside","outside","right","left","outside"],
+                ["middle","outside","left","summon","summon"]
+            ]
+        },
+        {
+            "damage":[2,3,4],
+            "attackSpeed":3000,
+            "movement":[
+                ["left","middle","right","summon","summon","summon","summon"],
+                ["summon","summon","left","right","left","middle","summon"]
+            ]
+        }
+    ],
+    "phasenum":2,
+    "phasechange_health":[
+        400, 200
+    ]
+}
