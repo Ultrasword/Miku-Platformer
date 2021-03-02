@@ -249,6 +249,7 @@ class Platform:
             for c in col[self.player]:
                 if type(c) == OBJ.Coin:
                     c.kill()
+                    self.GAMEWORLD.score += 1
                     score.score += 1
                     self.AUDIO.set_volume(0,0.05)
                     self.AUDIO.play_effect("pickup_coin",0,0.05)
