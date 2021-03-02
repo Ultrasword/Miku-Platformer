@@ -18,10 +18,11 @@ class Game:
         self.PARTICLES = self.make_new_sprGroup()
         self.OBJECTS = self.make_new_soloGroup()
         self.SUG = []
-        self.level = 3
+        self.level = 1
         self.pastlevel = self.level
         self.changelevel = False
         self.playerdeath = False
+        self.score = 0
         
     def change_display_size(self):
         self.display = pygame.display.set_mode(self.display.get_size(), )
